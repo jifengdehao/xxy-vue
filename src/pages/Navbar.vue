@@ -8,8 +8,8 @@
             </ul>
         </nav>
         <section class="scroll-list">
-            <travel v-for="(item,index) in travelsList" :travel="item" v-show="initIndex == 0"></travel>
-            <panel v-for="(item,index) in sportsList" :sport="item" v-show="initIndex == 1"></panel>
+            <travel v-for="(item,index) in travelsList" :travel="item" v-show="initIndex == 0" :key="index"></travel>
+            <panel v-for="(item,index) in sportsList" :sport="item" v-show="initIndex == 1" :key="index"></panel>
         </section>
         <div class="btn-apply" id="drag1">
             <div @click="post">
@@ -70,7 +70,7 @@
             obj1.addEventListener('touchmove', function (event) {
 
                 if (event.targetTouches.length == 1) {
-                    event.preventDefault();// 阻止浏览器默认事件，重要 
+                    event.preventDefault();// 阻止浏览器默认事件，重要
                     var touch = event.targetTouches[0];
                     // 把元素放在手指所在的位置
                     obj1.style.left = touch.pageX - 50 + 'px';

@@ -11,7 +11,7 @@
                 </router-link>
             </div>
 		</div>
-        <panel v-for="(item,index) in sportList" :sport="item"></panel>
+        <panel v-for="(item,index) in sportList" :sport="item" :key="index"></panel>
 	</div>
 </template>
 

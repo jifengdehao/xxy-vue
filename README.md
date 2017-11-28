@@ -18,7 +18,6 @@
 > * restful api
 > * leancloud
 
-### [具体详情](https://hzzly.github.io/2017/03/08/%E8%BF%9B%E9%98%B6vue%E5%85%A8%E5%AE%B6%E6%A1%B6/)
 
 ## Build Setup
 

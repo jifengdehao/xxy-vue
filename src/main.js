@@ -3,10 +3,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import * as mock from './util/mock'
 
 import store from './vuex/store'
 import * as filters from './util/filter'
-
 Object.keys(filters).forEach(k => Vue.filter(k, filters[k])) //注册过滤器
 
 /* eslint-disable no-new */

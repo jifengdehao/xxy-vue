@@ -11,7 +11,7 @@
                 </router-link>
             </div>
 		</div>
-        <travel v-for="(item,index) in travelLists" :travel="item"></travel>
+        <travel v-for="(item,index) in travelLists" :travel="item" :key="index"></travel>
 	</div>
 </template>
 

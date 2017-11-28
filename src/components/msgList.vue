@@ -1,28 +1,28 @@
 <template>
-	<div class="msg-list">
-        <msg v-for="(item,index) in msgLists"></msg>
-	</div>
+  <div class="msg-list">
+    <msg v-for="(item,index) in msgLists" :key="index"></msg>
+  </div>
 </template>
 
 <script>
-import msg from '@/components/msg'
+  import msg from '@/components/msg'
 
-export default {
+  export default {
     components: {
-        msg
+      msg
     },
-	data() {
-		return {
-            msgLists: [
-                { id:1 },
-                { id:1 },
-                { id:1 },
-                { id:1 },
-                { id:1 },
-                { id:1 },
-                { id:1 },
-            ]
-		}
-	}
-}
+    data() {
+      return {
+        msgLists: [
+          {id: 1},
+          {id: 1},
+          {id: 1},
+          {id: 1},
+          {id: 1},
+          {id: 1},
+          {id: 1},
+        ]
+      }
+    }
+  }
 </script>
